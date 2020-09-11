@@ -137,6 +137,17 @@ Content-Type: application/json
 
 ```
 
+```json
+404 Not Found
+{
+    "timestamp": "2020-09-11T09:36:28.118+0000",
+    "status": 404,
+    "error": "Not Found",
+    "message": "pupil Id Not found",
+    "path": "/setFriendShip/45/68"
+}
+```
+
 ### Enroll a pupil to a school
 
 #### Calculation
