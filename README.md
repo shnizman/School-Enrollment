@@ -56,6 +56,16 @@ id of the created pupil
 }
 ```
 
+```json
+
+{
+    "timestamp": "2020-09-11T08:42:52.938+0000",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Pupil must have at least one grade",
+    "path": "/pupil"
+}
+```
 
 ### Create a school
 #### Request
