@@ -47,6 +47,7 @@ id of the created pupil
 ```
 
 ```json
+404 Not Found
 {
     "timestamp": "2020-09-11T08:40:57.648+0000",
     "status": 404,
@@ -57,7 +58,7 @@ id of the created pupil
 ```
 
 ```json
-
+400 Bad Request
 {
     "timestamp": "2020-09-11T08:42:52.938+0000",
     "status": 400,
