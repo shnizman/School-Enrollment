@@ -1,6 +1,8 @@
 # School-Enrollment
 
-Simple School Enrollment, a backend Rest API, using Java, Spring, Spring boot and m2 in memory DB.
+Simple School Enrollment, a backend Rest API, using Java, Spring, Spring boot and m2 in memory DB.  
+Edge cases are not been handled
+
 
 ## Installation
 
