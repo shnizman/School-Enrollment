@@ -26,9 +26,9 @@ Content-Type: application/json
 
 Payload:
 {
-  Lat: Double,
-  Lon: Double,
-  Grades : [
+  lat: Double,
+  lon: Double,
+  grades : [
       {
           courseName : String,
           grade : Integer
@@ -58,8 +58,8 @@ Content-Type: application/json
 
 Payload:
 {
-  Lat: Double,
-  Lon: Double,
+  lat: Double,
+  lon: Double,
   minimumGpa: Integer,
   maxNumberOfPupils: Integer
 }
