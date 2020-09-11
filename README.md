@@ -96,7 +96,7 @@ Content-Type: application/json
 ### Enroll a pupil to a school
 
 ### Calculation
-Pupil will be enrolled to a school that maximizes the following formula:
+Pupil will be enrolled to a school that maximizes the following formula:  
 NUMBER OF FRIENDS IN THE SCHOOL * 1 / DISTANCE FROM SCHOOL(KM)
 
 Distance is calculated using Haversine formula
