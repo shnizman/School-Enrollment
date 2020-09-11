@@ -43,15 +43,8 @@ Payload:
 
 ```json
 200 OK
-
 id of the created pupil
-
 ```
-
-
-
-
-
 
 
 ### Create a school
