@@ -95,20 +95,20 @@ Content-Type: application/json
 
 ### Enroll a pupil to a school
 
-### Calculation
+#### Calculation
 Pupil will be enrolled to a school that maximizes the following formula:  
 NUMBER OF FRIENDS IN THE SCHOOL * 1 / DISTANCE FROM SCHOOL(KM)
 
 DISTANCE FROM SCHOOL - is calculated using [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula)
 
-### Prerequisite
+#### Prerequisite
 In order to enroll a pupil to a specific school, the pupil GPA should be greater than schools
 minimum GPA and the number of enrolled pupils has to be less than the schools max number of pupils
 
 #### Request
 
 ```
-GET http://localhost:8080/enroll/{pupilId}
+POST http://localhost:8080/enroll/{pupilId}
 Accept: application/json
 Content-Type: application/json
 ```
