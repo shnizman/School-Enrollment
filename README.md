@@ -46,6 +46,16 @@ Payload:
 id of the created pupil
 ```
 
+```json
+{
+    "timestamp": "2020-09-11T08:40:57.648+0000",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No message available",
+    "path": "/pupil"
+}
+```
+
 
 ### Create a school
 #### Request
