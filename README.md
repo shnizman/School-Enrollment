@@ -106,6 +106,16 @@ Payload:
 id of the created school.
 ```
 
+```json
+400 Bad Request
+{
+    "timestamp": "2020-09-11T09:33:19.950+0000",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "JSON parse error",
+    "path": "/school"
+}
+```
 
 
 ### Set friendship between two pupils
