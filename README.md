@@ -174,5 +174,16 @@ Content-Type: application/json
 200 OK
 ```
 
+```json
+404 Not Found
+{
+    "timestamp": "2020-09-11T09:44:32.830+0000",
+    "status": 404,
+    "error": "Not Found",
+    "message": "pupil Id Not found",
+    "path": "/enroll/57"
+}
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
