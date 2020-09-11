@@ -82,6 +82,9 @@ id of the created school.
 
 
 ### Set friendship between two pupils
+
+This relation is symmetric
+
 #### Request
 
 ```
@@ -97,11 +100,22 @@ Content-Type: application/json
 
 ```
 
-### Get All unwatched scheduled TV shows
+### Enroll a pupil to a school
+
+### Calculation
+Pupil will be enrolled to a school that maximizes the following formula:
+NUMBER OF FRIENDS IN THE SCHOOL * 1 / DISTANCE FROM SCHOOL(KM)
+
+Distance is calculated using Haversine formula
+
+### Prerequisite
+In order to enroll a pupil to a specific school, the pupil GPA should be greater than schools
+minimum GPA and the number of enrolled pupils has to be less than the schools max number of pupils
+
 #### Request
 
 ```
-GET http://localhost:8080/api/tvSchedule/tvShows/unwatched
+GET http://localhost:8080/enroll/{pupilId}
 Accept: application/json
 Content-Type: application/json
 ```
@@ -110,76 +124,7 @@ Content-Type: application/json
 
 ```json
 200 OK
-[
-    {
-        "id": 1,
-        "name": "Under the Dome",
-        "image": "http://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg",
-        "cast": [
-            {
-                "id": 7,
-                "name": "Mackenzie Lintz",
-                "image": "http://static.tvmaze.com/uploads/images/original_untouched/3/7816.jpg"
-            }
-        ],
-        "firstUnwatchedEpisode": {
-            "id": 1,
-            "name": "Pilot",
-            "season": 1,
-            "number": 1,
-            "airDate": "2013-06-24T00:00:00.000+0000"
-        }
-    }
-]
-```
-```json
-500 Internal Server Error
-{
-    "timestamp": "2020-09-05T17:19:22.723+0000",
-    "status": 500,
-    "error": "Internal Server Error",
-    "message": "Error While Trying To Connect To Db",
-    "path": "/api/tvSchedule/tvShow"
-}
-```
-### Mark an episode as watched
-#### Request
-
-```
-PUT http://localhost:8080/api/tvSchedule/episode?id={id}
-Accept: application/json
-Content-Type: application/json
-```
-
-#### Response
-
-```json
-200 OK
-```
-```json
-404 NOT FOUND
-{
-    "timestamp": "2020-09-05T18:28:03.706+0000",
-    "status": 404,
-    "error": "Not Found",
-    "message": "Tv Show Not found",
-    "path": "/api/tvSchedule/tvShow"
-}
-```
-```json
-500 Internal Server Error
-{
-    "timestamp": "2020-09-05T17:19:22.723+0000",
-    "status": 500,
-    "error": "Internal Server Error",
-    "message": "Error While Trying To Connect To Db",
-    "path": "/api/tvSchedule/tvShow"
-}
 ```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
-
-
