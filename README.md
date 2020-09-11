@@ -44,7 +44,7 @@ Payload:
 ```json
 200 OK
 
-id(of type Long) of the created pupil
+id of the created pupil
 
 ```
 
@@ -54,13 +54,38 @@ id(of type Long) of the created pupil
 
 
 
-### Delete TV show from scheduler
+### Create a school
 #### Request
 
-id - The requested TV Show Id from [TVMaze API](https://www.tvmaze.com/api#shows)
 
 ```
-DELETE http://localhost:8080/api/tvSchedule/tvShow?id={id}
+POST http://localhost:8080/school
+Accept: application/json
+Content-Type: application/json
+
+Payload:
+{
+  Lat: Double,
+  Lon: Double,
+  minimumGpa: Integer,
+  maxNumberOfPupils: Integer
+}
+```
+
+#### Response
+
+```json
+200 OK
+id of the created school.
+```
+
+
+
+### Set friendship between two pupils
+#### Request
+
+```
+POST http://localhost:8080/setFriendShip/{firstPupilId}/{secondPupilId}
 Accept: application/json
 Content-Type: application/json
 ```
@@ -69,76 +94,9 @@ Content-Type: application/json
 
 ```json
 200 OK
-```
-```json
-404 NOT FOUND
-{
-    "timestamp": "2020-09-05T18:28:03.706+0000",
-    "status": 404,
-    "error": "Not Found",
-    "message": "Tv Show Not found",
-    "path": "/api/tvSchedule/tvShow"
-}
-```
-```json
-400 Bad Request
-{
-    "timestamp": "2020-09-05T17:19:22.723+0000",
-    "status": 400,
-    "error": "Bad Request",
-    "message": "Required int parameter 'id' is not present",
-    "path": "/api/tvSchedule/tvShow"
-}
-```
-```json
-500 Internal Server Error
-{
-    "timestamp": "2020-09-05T17:19:22.723+0000",
-    "status": 500,
-    "error": "Internal Server Error",
-    "message": "Error While Trying To Connect To Db",
-    "path": "/api/tvSchedule/tvShow"
-}
-```
-
-### Get All scheduled TV shows
-#### Request
 
 ```
-GET http://localhost:8080/api/tvSchedule/tvShows
-Accept: application/json
-Content-Type: application/json
-```
 
-#### Response
-
-```json
-200 OK
-[
-    {
-        "id": 1,
-        "name": "Under the Dome",
-        "image": "http://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg",
-        "cast": [
-            {
-                "id": 7,
-                "name": "Mackenzie Lintz",
-                "image": "http://static.tvmaze.com/uploads/images/original_untouched/3/7816.jpg"
-            }
-        ]
-    }
-]
-```
-```json
-500 Internal Server Error
-{
-    "timestamp": "2020-09-05T17:19:22.723+0000",
-    "status": 500,
-    "error": "Internal Server Error",
-    "message": "Error While Trying To Connect To Db",
-    "path": "/api/tvSchedule/tvShow"
-}
-```
 ### Get All unwatched scheduled TV shows
 #### Request
 
