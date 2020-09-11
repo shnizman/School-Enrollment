@@ -99,7 +99,7 @@ Content-Type: application/json
 Pupil will be enrolled to a school that maximizes the following formula:  
 NUMBER OF FRIENDS IN THE SCHOOL * 1 / DISTANCE FROM SCHOOL(KM)
 
-Distance is calculated using [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula)
+DISTANCE FROM SCHOOL - is calculated using [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula)
 
 ### Prerequisite
 In order to enroll a pupil to a specific school, the pupil GPA should be greater than schools
