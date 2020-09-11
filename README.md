@@ -68,6 +68,17 @@ id of the created pupil
 }
 ```
 
+```json
+500 Internal Server Error
+{
+    "timestamp": "2020-09-11T09:00:25.857+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "Error While Trying To Save New Pupil to Db",
+    "path": "/pupil"
+}
+```
+
 ### Create a school
 #### Request
 
