@@ -5,7 +5,6 @@ Edge cases are not been handled
 
 
 ### Run the project
-- Make sure to be in the root directory
 ```
 git clone https://github.com/shnizman/School-Enrollment.git
 cd School-Enrollment/SchoolEnrollment
