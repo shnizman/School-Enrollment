@@ -8,7 +8,7 @@ Edge cases are not been handled
 - Make sure to be in the root directory
 ```
 git clone https://github.com/shnizman/School-Enrollment.git
-cd java-rest-api/api
+cd School-Enrollment/SchoolEnrollment
 ```
 
 - Clean and build the project, run the command:
