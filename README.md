@@ -8,7 +8,7 @@ Edge cases are not been handled
 
 To run the application type
 
-mvn spring-boot:run
+mvn spring-boot:run 3
 
 
 mvn install
