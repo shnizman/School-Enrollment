@@ -24,9 +24,10 @@ java -jar target/SchoolEnrollment.jar
 
 
 ## Usage
-There is no Pupil without at least one Grade
 
 ### Create a pupil
+There is no Pupil without at least one Grade
+
 #### Request
 
 
