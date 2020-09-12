@@ -24,16 +24,6 @@ java -jar target/SchoolEnrollment.jar
 - Alternatively, you can run the `main` method in `SchoolEnrollment.java` in your chosen IDE, e.g. `IntelliJ`
 
 
-## Installation
-
-To run the application type
-
-mvn spring-boot:run 3
-
-
-mvn install
-If you are using maven, please refer to the mvn repository and choose your desired package version.
-
 ## Usage
 There is no Pupil without at least one Grade
 
