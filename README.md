@@ -17,11 +17,11 @@ mvn install
 ```
 This will also generate a jar file with all the dependencies which we will run once
 it has been created.
-- Run the `Main` method in `Application.java` by running 
+- Run the `jar` file by using the following command 
 ```
 java -jar target/SchoolEnrollment.jar
 ```
-- Alternatively, you can run the `main` method in `Application.java` in your chosen IDE, e.g. `IntelliJ`
+- Alternatively, you can run the `main` method in `SchoolEnrollment.java` in your chosen IDE, e.g. `IntelliJ`
 
 
 ## Installation
