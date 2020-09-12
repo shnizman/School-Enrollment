@@ -6,20 +6,20 @@ Edge cases are not been handled
 
 ### Run the project
 - Make sure to be in the root directory
-- First we need to create the smart contracts deriving from the solidity file `Greeter.sol` by running:
-```aidl
-mvn web3j:generate-sources
 ```
-- This will create the Greeter and Mortal contract under the package `org.web3j.model`
+git clone 
+cd java-rest-api/api
+```
+
 - Clean and build the project, run the command:
-```aidl
+```
 mvn install
 ```
 This will also generate a jar file with all the dependencies which we will run once
 it has been created.
 - Run the `Main` method in `Application.java` by running 
 ```
-mvn exec:java
+java -jar target/SchoolEnrollment.jar
 ```
 - Alternatively, you can run the `main` method in `Application.java` in your chosen IDE, e.g. `IntelliJ`
 
