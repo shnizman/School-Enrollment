@@ -14,7 +14,7 @@ cd School-Enrollment/SchoolEnrollment
 ```
 mvn install
 ```
-This will also generate a jar file with all the dependencies which we will run once
+This will  generate a jar file with all the dependencies which we will run once
 it has been created.
 - Run the `jar` file by using the following command 
 ```
